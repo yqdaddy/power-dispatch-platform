@@ -4,8 +4,7 @@
 
 ## 在线访问
 
-部署完成后，站点地址为：
-`https://<你的用户名>.github.io/power-dispatch-platform/`
+`https://power.litpp.com/`
 
 ## 快速开始
 
@@ -131,7 +130,9 @@ export const COLORS = {
 
 ### 修改部署路径
 
-如果你的仓库名称不同，需要更新 `vite.config.js`：
+当前使用相对路径 `./`，适配自定义域名部署。
+
+如需部署到 GitHub Pages 子目录，更新 `vite.config.js`：
 
 ```javascript
 export default defineConfig({
