@@ -1,145 +1,145 @@
-# Electric Power Dispatch Platform Architecture Documentation
+# 电力派单平台架构设计文档
 
-Interactive documentation site for the Electric Power Dispatch Platform architecture design.
+电力派单平台的交互式架构设计文档站点。
 
-## Live Site
+## 在线访问
 
-After deployment, your site will be available at:
-`https://<your-username>.github.io/power-dispatch-platform/`
+部署完成后，站点地址为：
+`https://<你的用户名>.github.io/power-dispatch-platform/`
 
-## Quick Start
+## 快速开始
 
 ```bash
-# Install dependencies
+# 安装依赖
 npm install
 
-# Start development server
+# 启动开发服务器
 npm run dev
 
-# Build for production
+# 构建生产版本
 npm run build
 
-# Preview production build
+# 预览生产版本
 npm run preview
 ```
 
-## Updating the Knowledge Base
+## 更新知识库内容
 
-All content is stored in a single file for easy maintenance:
+所有内容都存储在一个文件中，便于维护：
 
 **`src/data/content.js`**
 
-### What you can update:
+### 可更新的内容：
 
-| Section | Description |
-|---------|-------------|
-| `platformInfo` | Platform title, subtitle, version |
-| `tabs` | Navigation tabs |
-| `flowSteps` | Workflow status steps |
-| `roles` | Role definitions and features |
-| `moduleCategories` | Module categories and sub-modules |
-| `keyMetrics` | Overview page metrics |
-| `coreValues` | Core design principles |
-| `industryFeatures` | Industry-specific features |
-| `exceptionFlows` | Exception handling flows |
-| `COLORS` | Color theme configuration |
+| 配置项 | 说明 |
+|--------|------|
+| `platformInfo` | 平台标题、副标题、版本号 |
+| `tabs` | 导航标签页 |
+| `flowSteps` | 工单流程状态节点 |
+| `roles` | 角色定义及功能列表 |
+| `moduleCategories` | 模块分类及子模块 |
+| `keyMetrics` | 概览页核心指标 |
+| `coreValues` | 核心设计理念 |
+| `industryFeatures` | 电力行业差异化特性 |
+| `exceptionFlows` | 异常流程处理 |
+| `COLORS` | 颜色主题配置 |
 
-### Example: Adding a new module
+### 示例：添加新模块
 
 ```javascript
-// In src/data/content.js, find moduleCategories array
-// Add a new category:
+// 在 src/data/content.js 中找到 moduleCategories 数组
+// 添加新分类：
 {
-  category: "New Category",
+  category: "新分类名称",
   color: "#1565C0",
   icon: "🆕",
   modules: [
-    { name: "Module Name", desc: "Module description" },
-    // Add more modules...
+    { name: "模块名称", desc: "模块描述说明" },
+    // 添加更多模块...
   ]
 }
 ```
 
-### Example: Updating workflow steps
+### 示例：更新工单流程
 
 ```javascript
-// In src/data/content.js, find flowSteps array
-// Modify or add steps:
+// 在 src/data/content.js 中找到 flowSteps 数组
+// 修改或添加流程节点：
 {
-  status: "Status Name",
-  actor: "Actor",
-  desc: "Description",
+  status: "状态名称",
+  actor: "操作角色",
+  desc: "状态描述",
   color: COLORS.primary,
   icon: "📝"
 }
 ```
 
-## Deployment
+## 部署到 GitHub Pages
 
-### Automatic Deployment (Recommended)
+### 自动部署（推荐）
 
-The site automatically deploys to GitHub Pages when you push to the `main` branch.
+推送到 `main` 分支时会自动部署到 GitHub Pages。
 
-1. Enable GitHub Pages in repository settings:
-   - Go to Settings > Pages
-   - Source: GitHub Actions
+1. 在仓库设置中启用 GitHub Pages：
+   - 进入 Settings > Pages
+   - Source 选择：GitHub Actions
 
-2. Push your changes:
+2. 推送更改：
 ```bash
 git add .
-git commit -m "Update documentation"
+git commit -m "更新文档内容"
 git push origin main
 ```
 
-### Manual Deployment
+### 手动部署
 
 ```bash
 npm run build
 npm run deploy
 ```
 
-## Project Structure
+## 项目结构
 
 ```
 power-dispatch-platform/
 ├── src/
 │   ├── data/
-│   │   └── content.js    # All editable content
-│   ├── App.jsx           # Main component
-│   └── main.jsx          # Entry point
+│   │   └── content.js    # 所有可编辑的内容
+│   ├── App.jsx           # 主组件
+│   └── main.jsx          # 入口文件
 ├── public/
 │   └── favicon.svg
 ├── index.html
-├── vite.config.js        # Vite configuration
+├── vite.config.js        # Vite 配置
 └── package.json
 ```
 
-## Customization
+## 自定义配置
 
-### Changing Colors
+### 修改颜色主题
 
-Edit the `COLORS` object in `src/data/content.js`:
+编辑 `src/data/content.js` 中的 `COLORS` 对象：
 
 ```javascript
 export const COLORS = {
-  primary: "#1B3A5C",    // Main brand color
-  secondary: "#2E7D32",  // Secondary color
-  accent: "#E65100",     // Accent color
-  // ... more colors
+  primary: "#1B3A5C",    // 主色调
+  secondary: "#2E7D32",  // 次要颜色
+  accent: "#E65100",     // 强调色
+  // ... 更多颜色
 };
 ```
 
-### Changing Base URL
+### 修改部署路径
 
-If your repository name is different, update `vite.config.js`:
+如果你的仓库名称不同，需要更新 `vite.config.js`：
 
 ```javascript
 export default defineConfig({
-  base: '/your-repo-name/',
+  base: '/你的仓库名称/',
   // ...
 })
 ```
 
-## License
+## 许可证
 
 MIT

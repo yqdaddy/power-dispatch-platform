@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Electric Power Dispatch Platform - Architecture Design Documentation",
+  "description": "电力派单平台 - 架构设计文档",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
