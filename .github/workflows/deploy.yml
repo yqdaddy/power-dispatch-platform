@@ -5,7 +5,7 @@ name: 部署到 GitHub Pages
 
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, claude/deploy-github-pages-8c4g1]
   # 允许从 Actions 标签页手动触发
   workflow_dispatch:
 
