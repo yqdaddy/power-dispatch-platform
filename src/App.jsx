@@ -112,7 +112,7 @@ export default function App() {
         {/* OVERVIEW */}
         {activeTab === "overview" && (
           <div>
-            <SectionTitle icon="🏗️" title="平台全景总览" subtitle="三端协同、全链路数字化的电力维修安装派单平台" />
+            <SectionTitle icon="🏗️" title="平台全景总览" subtitle="三端协同、全链路数字化的储能维修安装派单平台" />
 
             {/* Key metrics */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 24 }}>
@@ -180,7 +180,7 @@ export default function App() {
               }}
             >
               <h3 style={{ margin: "0 0 14px", fontSize: 15, fontWeight: 700, color: COLORS.secondary }}>
-                💡 电力行业差异化设计
+                💡 储能行业差异化设计
               </h3>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
                 {industryFeatures.map((item, i) => (

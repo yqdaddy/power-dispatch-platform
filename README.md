@@ -1,10 +1,10 @@
-# 电力派单平台架构设计文档
+# 储能派单平台架构设计文档
 
-电力派单平台的交互式架构设计文档站点。
+储能派单平台的交互式架构设计文档站点。
 
 ## 在线访问
 
-`https://power.litpp.com/`
+`https://powerc.oubeeda.com/`
 
 ## 快速开始
 
@@ -39,7 +39,7 @@ npm run preview
 | `moduleCategories` | 模块分类及子模块 |
 | `keyMetrics` | 概览页核心指标 |
 | `coreValues` | 核心设计理念 |
-| `industryFeatures` | 电力行业差异化特性 |
+| `industryFeatures` | 储能行业差异化特性 |
 | `exceptionFlows` | 异常流程处理 |
 | `COLORS` | 颜色主题配置 |
 

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "电力派单平台 - 架构设计文档",
+  "description": "储能派单平台 - 架构设计文档",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

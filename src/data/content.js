@@ -1,5 +1,5 @@
 /**
- * 电力派单平台 - 知识库内容配置
+ * 储能派单平台 - 知识库内容配置
  *
  * 编辑此文件可更新平台文档内容。
  * 按模块分类组织，便于维护和升级。
@@ -219,7 +219,7 @@ export const coreValues = [
   { title: "质量可量化", desc: "多维评价 + 服务积分，持续提升服务质量", icon: "⭐", color: COLORS.purple },
 ];
 
-// 电力行业差异化特性
+// 储能行业差异化特性
 export const industryFeatures = [
   "电工证/特种作业证在线核验",
   "停电操作票电子化审批",
@@ -239,8 +239,8 @@ export const exceptionFlows = [
 
 // 平台信息
 export const platformInfo = {
-  title: "电力派单平台 · 架构设计",
-  subtitle: "电力功能维修与安装全链路数字化派单系统",
+  title: "储能派单平台 · 架构设计",
+  subtitle: "储能功能维修与安装全链路数字化派单系统",
   version: "V1.0",
-  icon: "⚡",
+  icon: "🔋",
 };
